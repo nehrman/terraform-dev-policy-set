@@ -1,3 +1,3 @@
 policy "restrict_vm_size_azure_dev" {
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
