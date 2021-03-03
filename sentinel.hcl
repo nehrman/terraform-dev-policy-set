@@ -1,14 +1,14 @@
 
 module "tfplan-functions" {
-    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/tfplan-functions/tfplan-functions.sentinel"
+    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/main/tfplan-functions/tfplan-functions.sentinel"
 }
 
 module "tfstate-functions" {
-    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/tfstate-functions/tfstate-functions.sentinel"
+    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/main/tfstate-functions/tfstate-functions.sentinel"
 }
 
 module "tfconfig-functions" {
-    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/main/tfconfig-functions/tfconfig-functions.sentinel"
 }
 
 policy "restrict-vm-size" {
