@@ -12,6 +12,6 @@ module "tfconfig-functions" {
 }
 
 policy "restrict-vm-size" {
-    source = "./restrict-vm-size.sentinel"
+    source = "./restrict_vm_size_azure_dev.sentinel"
     enforcement_level = "hard-mandatory"
 }
