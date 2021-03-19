@@ -10,6 +10,10 @@ module "tfstate-functions" {
 module "tfconfig-functions" {
     source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/main/tfconfig-functions/tfconfig-functions.sentinel"
 }
+    
+module "tfrun-functions" {
+    source = "https://raw.githubusercontent.com/nehrman/terraform-sentinel-common-functions/main/tfrun-functions/tfrun-functions.sentinel"
+}
 
 policy "restrict-vm-size" {
     source = "./restrict_vm_size_azure_dev.sentinel"
