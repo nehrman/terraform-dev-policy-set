@@ -13,5 +13,10 @@ module "tfconfig-functions" {
 
 policy "restrict-vm-size" {
     source = "./restrict_vm_size_azure_dev.sentinel"
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
+}
+    
+policy "limit-proposed-monthly-cos" {
+    source = "./limit-proposed-monthly-cost.sentinel"
+    enforcement_level = "soft-mandatory"
 }
