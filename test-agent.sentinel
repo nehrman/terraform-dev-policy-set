@@ -2,4 +2,6 @@ import "http"
 
 resp = http.accept_status_codes([200, 403]).get("https://smartdesk.service-now.com/")
 
-main = rule { resp.body containes "SmartDesk" }
+print(resp.body)
+
+main = rule { resp.body contains "SmartDesk" }
