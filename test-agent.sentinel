@@ -1,0 +1,4 @@
+import "http"
+req = http.request("https://smartdesk.service-now.com/")
+print(req)
+print(http.get(req).body) 
