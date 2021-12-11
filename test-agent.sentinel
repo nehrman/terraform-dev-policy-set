@@ -1,4 +1,5 @@
 import "http"
-req = http.request("https://smartdesk.service-now.com/")
-print(req)
-print(http.get(req).body) 
+
+resp = http.accept_status_codes([200, 403]).get("https://smartdesk.service-now.com/")
+
+main = rule { resp.body contains "test" }
