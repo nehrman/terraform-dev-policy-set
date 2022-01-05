@@ -25,8 +25,3 @@ policy "limit-proposed-monthly-cos" {
     enforcement_level = "soft-mandatory"
 }
 
-policy "test-agent" {
-    source = "./test-agent.sentinel"
-    enforcement_level = "soft-mandatory"
-}
-
